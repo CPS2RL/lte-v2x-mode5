@@ -1,0 +1,9 @@
+Notes (Spring 2019):
+
+This directory contains dist-vs-prr traces.
+
+Format: distance interval: [dist_min, dist_max)
+
+dist_min; dist_max; avg_prr
+
+Depending on the size it may or may not be added to git repo.

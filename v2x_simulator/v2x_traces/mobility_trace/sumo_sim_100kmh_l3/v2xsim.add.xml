@@ -1,0 +1,12 @@
+<additionals>
+    <rerouter id="rerouter_0" edges="gneE50">	
+		<interval end="1e9">
+		   <destProbReroute id="gneE53"/>
+		</interval>
+	</rerouter>
+    <rerouter id="rerouter_1" edges="gneE53">
+		<interval end="1e9">
+		   <destProbReroute id="gneE50"/>
+		</interval>
+	</rerouter>
+</additionals>

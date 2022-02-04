@@ -1,0 +1,416 @@
+
+# NOTE: this is for 10km/h case
+
+# =============================================
+# 1. for the rate and power control experiment
+# =============================================
+
+# J3161
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=20
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_10KMH"
+--outLogFileName="v2x_traces/J3161_10KMH.txt" '
+
+
+# J3161_10_MHZ
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=10
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_10MHz_10KMH"
+--outLogFileName="v2x_traces/J3161_10MHz_10KMH.txt" '
+
+
+
+
+# J3161_PC
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=20
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_PC_10KMH"
+--outLogFileName="v2x_traces/J3161_PC_10KMH.txt" '
+
+
+
+# J3161_PC_10MHz
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=10
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_PC_10MHz_10KMH"
+--outLogFileName="v2x_traces/J3161_PC_10MHz_10KMH.txt" '
+
+
+
+# J3161_NRC_PC
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=20
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=true
+--isCongestControlEnabled=false
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_NRC_PC_10KMH"
+--outLogFileName="v2x_traces/J3161_NRC_PC_10KMH.txt" '
+
+
+
+# J3161_NRC_PC_10MHz
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=10
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=true
+--isCongestControlEnabled=false
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_NRC_PC_10MHz_10KMH"
+--outLogFileName="v2x_traces/J3161_NRC_PC_10MHz_10KMH.txt" '
+
+
+
+
+# J3161_NRC_NPC
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=20
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=true
+--isCongestControlEnabled=false
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_NRC_NPC_10KMH"
+--outLogFileName="v2x_traces/J3161_NRC_NPC_10KMH.txt" '
+
+
+
+# J3161_NRC_NPC_10MHz
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=10
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=true
+--isCongestControlEnabled=false
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_NRC_NPC_10MHz_10KMH"
+--outLogFileName="v2x_traces/J3161_NRC_NPC_10MHz_10KMH.txt" '
+
+
+# =============================
+# 2. With and Without HARQ 
+# =============================
+
+# J3161_NO_HARQ
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=20
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_NO_HARQ_10KMH"
+--outLogFileName="v2x_traces/J3161_NO_HARQ_10KMH.txt" '
+
+
+
+
+# J3161_10_MHZ_NO_HARQ
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=10
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_10MHz_NO_HARQ_10KMH"
+--outLogFileName="v2x_traces/J3161_10MHz_NO_HARQ_10KMH.txt" '
+
+
+# ================================
+# 3. Fixed T2
+# ================================
+
+# J3161_T2_20
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=20
+--isSingleTX=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=20
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_T2_20_10KMH"
+--outLogFileName="v2x_traces/J3161_T2_20_10KMH.txt" '
+
+
+# J3161_T2_50
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=20
+--isSingleTX=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=50
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_T2_50_10KMH"
+--outLogFileName="v2x_traces/J3161_T2_50_10KMH.txt" '
+
+
+# J3161_T2_100
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=20
+--isSingleTX=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=100
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_T2_100_10KMH"
+--outLogFileName="v2x_traces/J3161_T2_100_10KMH.txt" '
+
+
+# J3161_10_MHZ_T2_20
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=10
+--isSingleTX=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=20
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_10MHz_T2_20_10KMH"
+--outLogFileName="v2x_traces/J3161_10MHz_T2_20_10KMH.txt" '
+
+
+
+# J3161_10_MHZ_T2_50
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=10
+--isSingleTX=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=50
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_10MHz_T2_50_10KMH"
+--outLogFileName="v2x_traces/J3161_10MHz_T2_50_10KMH.txt" '
+
+
+# J3161_10_MHZ_T2_100
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=10
+--isSingleTX=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=100
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.8
+--expName="J3161_10MHz_T2_100_10KMH"
+--outLogFileName="v2x_traces/J3161_10MHz_T2_100_10KMH.txt" '
+
+
+
+# ================================
+# 4. Different pKeep
+# ================================
+
+
+# J3161_pKeep_20
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=20
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.2
+--expName="J3161_pKeep_20_10KMH"
+--outLogFileName="v2x_traces/J3161_pKeep_20_10KMH.txt" '
+
+
+
+# J3161_10_MHZ_pKeep_20
+./waf --run 'lte-v2x 
+--traceFile="v2x_traces/mobility_trace/sumo_ns3_tcl/v2xsim_ns3_v2386_l3_10kmh_shifted.tcl" 
+--numVehicle=2386 
+--simDuration=5000
+--logStartTime=3000
+--sysBW=10
+--isSingleTX=false
+--isFixedT2Window=false
+--isHARQEnabled=true
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--distPad=300
+--rxPad=250
+--pKeep=0.2
+--expName="J3161_10MHz_pKeep_20_10KMH"
+--outLogFileName="v2x_traces/J3161_10MHz_pKeep_20_10KMH.txt" '
+

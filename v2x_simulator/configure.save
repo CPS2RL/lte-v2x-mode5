@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Starting configuration...."
+
+
+CXXFLAGS="-Wall -g -O0" ./waf configure 
+
+
+

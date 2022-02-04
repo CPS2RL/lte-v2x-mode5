@@ -1,0 +1,12 @@
+<configuration>
+    <input>
+       <net-file value="v2xsim.net.xml"/>
+       <route-files value="v2xsim.rou.xml"/>
+       <additional-files value="v2xsim.add.xml"/>
+       <gui-settings-file value="v2xsim.settings.xml"/>
+    </input>
+	<time>
+        <begin value="0"/>
+        <end value="3610"/>
+    </time>
+</configuration>

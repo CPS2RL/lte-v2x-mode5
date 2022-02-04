@@ -1,0 +1,240 @@
+# Veusz saved document (version 3.0.1.1)
+# Saved at 2019-07-15T22:04:26.898981
+
+AddImportPath(u'C:\\Users\\Monowar Hasan.LAPTOP-3V58O6K7\\Desktop')
+ImportString(u'10MhZcol1(numeric)','''
+0.000000e+00
+2.000000e+01
+4.000000e+01
+6.000000e+01
+8.000000e+01
+1.000000e+02
+1.200000e+02
+1.400000e+02
+1.600000e+02
+1.800000e+02
+2.000000e+02
+2.200000e+02
+2.400000e+02
+2.600000e+02
+2.800000e+02
+3.000000e+02
+3.200000e+02
+3.400000e+02
+3.600000e+02
+3.800000e+02
+4.000000e+02
+4.200000e+02
+4.400000e+02
+4.600000e+02
+4.800000e+02
+5.000000e+02
+''')
+ImportString(u'10MhZcol2(numeric)','''
+2.000000e+01
+4.000000e+01
+6.000000e+01
+8.000000e+01
+1.000000e+02
+1.200000e+02
+1.400000e+02
+1.600000e+02
+1.800000e+02
+2.000000e+02
+2.200000e+02
+2.400000e+02
+2.600000e+02
+2.800000e+02
+3.000000e+02
+3.200000e+02
+3.400000e+02
+3.600000e+02
+3.800000e+02
+4.000000e+02
+4.200000e+02
+4.400000e+02
+4.600000e+02
+4.800000e+02
+5.000000e+02
+5.200000e+02
+''')
+ImportString(u'10MhZcol3(numeric)','''
+9.558052e-01
+9.839960e-01
+9.793275e-01
+9.600967e-01
+9.414626e-01
+9.346123e-01
+9.336265e-01
+8.808084e-01
+8.282959e-01
+8.200646e-01
+7.883068e-01
+7.834630e-01
+7.376554e-01
+6.745339e-01
+6.936591e-01
+6.389104e-01
+5.687255e-01
+5.944552e-01
+5.314657e-01
+5.094574e-01
+5.112712e-01
+4.804754e-01
+4.339779e-01
+4.046398e-01
+4.252962e-01
+4.116729e-01
+''')
+ImportString(u'20MhZcol1(numeric)','''
+0.000000e+00
+2.000000e+01
+4.000000e+01
+6.000000e+01
+8.000000e+01
+1.000000e+02
+1.200000e+02
+1.400000e+02
+1.600000e+02
+1.800000e+02
+2.000000e+02
+2.200000e+02
+2.400000e+02
+2.600000e+02
+2.800000e+02
+3.000000e+02
+3.200000e+02
+3.400000e+02
+3.600000e+02
+3.800000e+02
+4.000000e+02
+4.200000e+02
+4.400000e+02
+4.600000e+02
+4.800000e+02
+5.000000e+02
+''')
+ImportString(u'20MhZcol2(numeric)','''
+2.000000e+01
+4.000000e+01
+6.000000e+01
+8.000000e+01
+1.000000e+02
+1.200000e+02
+1.400000e+02
+1.600000e+02
+1.800000e+02
+2.000000e+02
+2.200000e+02
+2.400000e+02
+2.600000e+02
+2.800000e+02
+3.000000e+02
+3.200000e+02
+3.400000e+02
+3.600000e+02
+3.800000e+02
+4.000000e+02
+4.200000e+02
+4.400000e+02
+4.600000e+02
+4.800000e+02
+5.000000e+02
+5.200000e+02
+''')
+ImportString(u'20MhZcol3(numeric)','''
+1.000000e+00
+9.856459e-01
+9.906635e-01
+9.739678e-01
+9.672330e-01
+9.598721e-01
+9.392106e-01
+9.371764e-01
+9.071667e-01
+8.688957e-01
+8.509839e-01
+8.248346e-01
+7.814024e-01
+7.473225e-01
+7.538834e-01
+7.238518e-01
+6.559233e-01
+6.280069e-01
+6.146193e-01
+5.883085e-01
+5.590624e-01
+5.387042e-01
+5.584739e-01
+5.480088e-01
+4.833806e-01
+4.655656e-01
+''')
+Set('colorTheme', u'default-latest')
+Set('StyleSheet/axis-function/autoRange', u'next-tick')
+Add('page', name=u'page1', autoadd=False)
+To(u'page1')
+Set('width', u'15cm')
+Set('height', u'12cm')
+Add('graph', name=u'graph1', autoadd=False)
+To(u'graph1')
+Set('topMargin', u'0.2pt')
+Add('axis', name=u'x', autoadd=False)
+To(u'x')
+Set('label', u'Distance')
+Set('mode', u'numeric')
+Set('Label/font', u'Arial')
+Set('Label/size', u'18pt')
+Set('TickLabels/font', u'Arial')
+Set('TickLabels/size', u'16pt')
+Set('GridLines/hide', False)
+To('..')
+Add('axis', name=u'y', autoadd=False)
+To(u'y')
+Set('label', u'Average Packet Reception Ratio')
+Set('min', -0.05)
+Set('max', 1.05)
+Set('direction', u'vertical')
+Set('Label/font', u'Arial')
+Set('Label/size', u'18pt')
+Set('TickLabels/font', u'Arial')
+Set('TickLabels/size', u'16pt')
+Set('GridLines/hide', False)
+To('..')
+Add('xy', name=u'10 MHz', autoadd=False)
+To(u'10 MHz')
+Set('marker', u'circle')
+Set('markerSize', u'3pt')
+Set('color', u'#aa0000')
+Set('xData', u'10MhZcol1')
+Set('yData', u'10MhZcol3')
+Set('key', u'10 MHz')
+Set('labels', u'')
+Set('scalePoints', [])
+Set('yAxis', u'y')
+Set('Color/points', [])
+Set('PlotLine/color', u'#aa0000')
+Set('PlotLine/width', u'1.5pt')
+Set('PlotLine/style', u'dot1')
+To('..')
+Add('xy', name=u'20 MHz', autoadd=False)
+To(u'20 MHz')
+Set('marker', u'barvert')
+Set('xData', u'20MhZcol1')
+Set('yData', u'20MhZcol3')
+Set('key', u'20 MHz')
+Set('PlotLine/width', u'1.5pt')
+To('..')
+Add('key', name=u'key1', autoadd=False)
+To(u'key1')
+Set('Text/font', u'Arial')
+Set('Text/size', u'16pt')
+Set('Background/style', u'solid')
+Set('Background/hide', False)
+Set('Background/transparency', 30)
+Set('Border/transparency', 0)
+Set('Border/hide', False)
+Set('horzPosn', u'left')
+To('..')
+To('..')
+To('..')

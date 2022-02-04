@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+echo "Starting configuration...."
+CXXFLAGS="-Wal -std=c++0x" ./waf configure

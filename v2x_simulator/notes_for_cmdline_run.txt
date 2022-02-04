@@ -1,0 +1,28 @@
+Use the following to run the code with command line parameters.
+
+# to run with 20MHz case (no HARQ, CC enabled, no power control, single TX)
+# no SUMO/NS3 tracefile specified
+
+./waf --run 'lte-v2x 
+--numVehicle=500 
+--simDuration=3000 
+--sysBW=20
+--isSingleTX=true
+--isFixedT2Window=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--aoiX1=2500
+--aoiX2=4800
+--expName="20MHz_HARQ_DIS_CC_ENB_CBR_T2_50KMH_3s_1TX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_CC_ENB_CBR_T2_50KMH_3s_1TX.txt" '
+
+
+# also run sequence (as of 7/5/19):
+
+1. run the simulation as above with ./waf --run ...
+2. run the python script with min_sinr_extractor
+3. then run kpi generation python script such as dis_vs_prr etc.
+
+# notes (as of 7/11/19):
+1. run with ./waf run
+2. run directly KPI generation script say dist_vs_prr (since now we directly out per from NS3)

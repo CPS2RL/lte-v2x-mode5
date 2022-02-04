@@ -1,0 +1,16 @@
+Notes (Spring 2019):
+
+This directory contains time-vs-cbr-packet-arrival-txpower and reselction traces.
+
+Format (cbrNarrival):
+
+logging time; txid; cbr; packet-arrival-rate; txpower
+
+
+Format (resel):
+
+vid; reselection subframe
+
+
+
+Depending on the size it may or may not be added to git repo.

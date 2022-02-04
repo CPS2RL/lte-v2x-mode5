@@ -1,0 +1,545 @@
+
+
+NOTE: for Intern final presentation we used 4500 simduration and 2500 logstarttime
+
+
+
+
+NOTE: BASELINE ==> RC: Enabled, PC: Disabled
+
+
+##################################
+#### FIXED T2 (NO HARQ)
+###################################
+
+
+# 20 MHz N vehicle -- BASELINE_T2_20 (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=20
+--aoiX1=2000
+--aoiX2=3000
+--expName="20MHz_HARQ_DIS_RC_ENB_PC_DIS_F20_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_RC_ENB_PC_DIS_F20_T2_10KMH_5s_2200TX.txt" '
+
+
+# 20 MHz N vehicle -- BASELINE_T2_50 (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=50
+--aoiX1=2000
+--aoiX2=3000
+--expName="20MHz_HARQ_DIS_RC_ENB_PC_DIS_F50_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_RC_ENB_PC_DIS_F50_T2_10KMH_5s_2200TX.txt" '
+
+
+
+
+# 20 MHz N vehicle -- BASELINE_T2_100 (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=100
+--aoiX1=2000
+--aoiX2=3000
+--expName="20MHz_HARQ_DIS_RC_ENB_PC_DIS_F100_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_RC_ENB_PC_DIS_F100_T2_10KMH_5s_2200TX.txt" '
+
+
+
+
+# 10 MHz N vehicle -- BASELINE_T2_20 (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=20
+--aoiX1=2000
+--aoiX2=3000
+--expName="10MHz_HARQ_DIS_RC_ENB_PC_DIS_F20_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_RC_ENB_PC_DIS_F20_T2_10KMH_5s_2200TX.txt" '
+
+
+# 10 MHz N vehicle -- BASELINE_T2_50 (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=50
+--aoiX1=2000
+--aoiX2=3000
+--expName="10MHz_HARQ_DIS_RC_ENB_PC_DIS_F50_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_RC_ENB_PC_DIS_F50_T2_10KMH_5s_2200TX.txt" '
+
+
+
+
+# 10 MHz N vehicle -- BASELINE_T2_100 (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--isFixedT2Window=true
+--selectionWindowFixedT2=100
+--aoiX1=2000
+--aoiX2=3000
+--expName="10MHz_HARQ_DIS_RC_ENB_PC_DIS_F100_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_RC_ENB_PC_DIS_F100_T2_10KMH_5s_2200TX.txt" '
+
+
+
+
+
+
+
+
+##################################
+#### Rate and power control enabled
+###################################
+
+
+
+# 20 MHz N vehicle (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--expName="20MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_10KMH_5s_2200TX.txt" '
+
+
+
+# 10 MHz N vehicle (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--expName="10MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_10KMH_5s_2200TX.txt" '
+
+
+##################################
+#### Rate and power control disabled
+###################################
+
+
+#### RC disabled
+
+# 20 MHz N vehicle -- no RC (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=false
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--expName="20MHz_HARQ_DIS_RC_DIS_PC_ENB_CBR_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_RC_DIS_PC_ENB_CBR_T2_10KMH_5s_2200TX.txt" '
+
+
+
+# 10 MHz N vehicle -- no RC (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=false
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--expName="10MHz_HARQ_DIS_RC_DIS_PC_ENB_CBR_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_RC_DIS_PC_ENB_CBR_T2_10KMH_5s_2200TX.txt" '
+
+
+
+#### PC disabled
+
+# 20 MHz N vehicle -- no PC (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--expName="20MHz_HARQ_DIS_RC_ENB_PC_DIS_CBR_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_RC_ENB_PC_DIS_CBR_T2_10KMH_5s_2200TX.txt" '
+
+
+
+# 10 MHz N vehicle -- no PC (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--expName="10MHz_HARQ_DIS_RC_ENB_PC_DIS_CBR_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_RC_ENB_PC_DIS_CBR_T2_10KMH_5s_2200TX.txt" '
+
+
+
+#### Both RC and PC disabled
+
+# 20 MHz N vehicle -- no RC&PC (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=false
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--expName="20MHz_HARQ_DIS_RC_DIS_PC_DIS_CBR_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_RC_DIS_PC_DIS_CBR_T2_10KMH_5s_2200TX.txt" '
+
+
+
+# 10 MHz N vehicle -- no RC&PC (with SUMO: 2000/3/10 Veh/Lane/Speed -- trimming by AoI)
+
+./waf --run 'lte-v2x
+--numVehicle=2200
+--simDuration=5000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=false
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--expName="10MHz_HARQ_DIS_RC_DIS_PC_DIS_CBR_T2_10KMH_5s_2200TX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_RC_DIS_PC_DIS_CBR_T2_10KMH_5s_2200TX.txt" '
+
+
+
+
+
+####################################
+OLD
+####################################
+
+
+
+# 20 MHz N vehicle (with SUMO: 1000 Vehicle)
+
+./waf --run 'lte-v2x
+--numVehicle=1000
+--simDuration=3000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--expName="20MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_1000TX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_1000TX.txt" '
+
+
+
+# 10 MHz N vehicle (with SUMO: 1000 Vehicle)
+
+./waf --run 'lte-v2x
+--numVehicle=1000
+--simDuration=3000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--expName="10MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_1000TX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_1000TX.txt" '
+
+
+
+# 20 MHz N vehicle (with SUMO: 1125 Vehicle -- trimming by AoI)
+
+./waf --run 'lte-v2x
+--numVehicle=1125
+--simDuration=3000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--expName="20MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_1000TX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_1000TX.txt" '
+
+
+
+# 10 MHz N vehicle (with SUMO: 1125 Vehicle -- trimming by AoI)
+
+./waf --run 'lte-v2x
+--numVehicle=1125
+--simDuration=3000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--expName="10MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_1000TX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_1000TX.txt" '
+
+
+
+
+
+
+
+
+
+# 20 MHz N vehicle (with NS3 constant velocity mobility)
+
+./waf --run 'lte-v2x
+--simDuration=3000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--expName="20MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_NTX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_NTX.txt" '
+
+
+
+# 10 MHz N vehicle (with NS3 constant velocity mobility)
+
+./waf --run 'lte-v2x
+--simDuration=3000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--isPowerControlEnabled=true
+--aoiX1=2000
+--aoiX2=3000
+--expName="10MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_NTX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_RC_ENB_PC_ENB_CBR_T2_50KMH_3s_NTX.txt" '
+
+
+
+
+
+
+# 20 MHz N vehicle -- NO CC, NO PWCNTL (with NS3 constant velocity mobility)
+
+./waf --run 'lte-v2x
+--simDuration=3000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=false
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--expName="20MHz_HARQ_DIS_RC_DIS_PC_DIS_CBR_T2_50KMH_3s_NTX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_RC_DIS_PC_DIS_CBR_T2_50KMH_3s_NTX.txt" '
+
+
+
+# 10 MHz N vehicle -- NO CC, NO PWCNTL (with NS3 constant velocity mobility)
+
+./waf --run 'lte-v2x
+--simDuration=3000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=false
+--isPowerControlEnabled=false
+--aoiX1=2000
+--aoiX2=3000
+--expName="10MHz_HARQ_DIS_RC_DIS_PC_DIS_CBR_T2_50KMH_3s_NTX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_RC_DIS_PC_DIS_CBR_T2_50KMH_3s_NTX.txt" '
+
+
+#############################################
+# older commands with NS3 mobility model
+#############################################
+
+
+# 20 MHz N vehicle (no congestion control)
+
+./waf --run 'lte-v2x
+--numVehicle=500
+--simDuration=3000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=false
+--aoiX1=2500
+--aoiX2=4800
+--expName="20MHz_HARQ_DIS_CC_DIS_CBR_T2_50KMH_3s_NTX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_CC_DIS_CBR_T2_50KMH_3s_NTX.txt" '
+
+
+
+# 10 MHz N vehicle (no congestion control)
+
+./waf --run 'lte-v2x
+--numVehicle=500
+--simDuration=3000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=false
+--aoiX1=2500
+--aoiX2=4800
+--expName="10MHz_HARQ_DIS_CC_DIS_CBR_T2_50KMH_3s_NTX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_CC_DIS_CBR_T2_50KMH_3s_NTX.txt" '
+
+
+
+
+
+
+
+# 20 MHz N vehicle
+
+./waf --run 'lte-v2x
+--numVehicle=500
+--simDuration=3000
+--sysBW=20
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--aoiX1=2500
+--aoiX2=4800
+--expName="20MHz_HARQ_DIS_CC_ENB_CBR_T2_50KMH_3s_NTX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_CC_ENB_CBR_T2_50KMH_3s_NTX.txt" '
+
+
+
+
+# 10 MHz N vehicle
+
+./waf --run 'lte-v2x
+--numVehicle=500
+--simDuration=3000
+--sysBW=10
+--isSingleTX=false
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--aoiX1=2500
+--aoiX2=4800
+--expName="10MHz_HARQ_DIS_CC_ENB_CBR_T2_50KMH_3s_NTX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_CC_ENB_CBR_T2_50KMH_3s_NTX.txt" '
+
+
+
+# 20 MHz single
+
+./waf --run 'lte-v2x
+--numVehicle=500
+--simDuration=3000
+--sysBW=20
+--isSingleTX=true
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--aoiX1=2500
+--aoiX2=4800
+--expName="20MHz_HARQ_DIS_CC_ENB_CBR_T2_50KMH_3s_1TX"
+--outLogFileName="v2x_traces/20MHz_HARQ_DIS_CC_ENB_CBR_T2_50KMH_3s_1TX.txt" '
+
+
+# 10 MHz single
+
+./waf --run 'lte-v2x
+--numVehicle=500
+--simDuration=3000
+--sysBW=10
+--isSingleTX=true
+--isHARQEnabled=false
+--isCongestControlEnabled=true
+--aoiX1=2500
+--aoiX2=4800
+--expName="10MHz_HARQ_DIS_CC_ENB_CBR_T2_50KMH_3s_1TX"
+--outLogFileName="v2x_traces/10MHz_HARQ_DIS_CC_ENB_CBR_T2_50KMH_3s_1TX.txt" '

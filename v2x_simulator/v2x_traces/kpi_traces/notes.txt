@@ -1,0 +1,5 @@
+Notes (Spring 2019):
+
+This directory contains all the KPI traces.
+
+Depending on the size it may or may not be added to git repo.
